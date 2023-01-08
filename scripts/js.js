@@ -8,8 +8,8 @@ function showTime() {
 
       /////  HOURS/////
     let hours = currentTime.getHours()
-    let firstHour = 1;
-    let secondNumberOfHours = 9;
+    let firstHour = parseInt(hours/10);
+    let secondNumberOfHours = hours%10;
     ////// /MINUTES/////
     let minutes = currentTime.getMinutes();
     let lastMinute = (minutes % 10);
