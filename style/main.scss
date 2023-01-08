@@ -22,27 +22,68 @@
     .block {
       height: 100%;
       width: 30%;
-      margin: 0 5px;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       padding: 2px;
-      &:after{
-        content: ':';
-        display: block;
-        height: 25px;
-        width: 10px;
-        color: #863f3f;
-        font-size: 130px;
-        font-weight: 600;
+
+      &:last-of-type {
+        justify-content: center;
       }
-      &:last-of-type:after{
-        display: none;
+
+      .dots {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .top {
+          width: 100%;
+          height: 30px;
+          background-color: #000;
+          display: block;
+          margin: 5px 0;
+          border-radius: 50%;
+        }
+
+        .bottom {
+          width: 100%;
+          height: 30px;
+          background-color: #000000;
+          display: block;
+          margin: 5px 0;
+          border-radius: 50%;
+        }
+
+        //&:after{
+        //  font-family: "Font Awesome 6 Free";
+        //  content: "\f192";
+        //  display: block;
+        //  height: 25px;
+        //  width: 10px;
+        //  color: #000;
+        //  font-size: 30px;
+        //  font-weight: 900;
+        //}
+        //&:before{
+        //  font-family: "Font Awesome 6 Free";
+        //  content: "\f192";
+        //  display: block;
+        //  height: 25px;
+        //  width: 10px;
+        //  color: #000;
+        //  font-size: 30px;
+        //  font-weight: 900;
+        //}
       }
+
+      //&:last-of-type:after{
+      //  display: none;
+      //}
     }
 
     .small_blocks {
       height: 100%;
-      width: 45%;
+      width: 40%;
       display: flex;
       justify-content: center;
       align-items: center;
