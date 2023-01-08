@@ -1,11 +1,9 @@
 const currentTime = new Date();
 
 function showTime() {
-
     function createImg() {
         return document.createElement('img')
     }
-
       /////  HOURS/////
     let hours = currentTime.getHours()
     let firstHour = parseInt(hours/10);
@@ -21,31 +19,20 @@ function showTime() {
     let firstSecond = parseInt(seconds / 10);
 
 
-
     const firstNumbOfHours = document.querySelector('.first_number_of_hours');
     const secondNumbOfHours = document.querySelector('.second_number_of_hours')
-
-    const firstHoursImg = createImg();
-
-
-    const SecHoursImg = createImg();
-
-
 
     const firstNumOfMin = document.querySelector('.first_number_of_minutes');
     const secondNumbOfMin = document.querySelector('.second_number_of_minutes');
 
-    const firstMinImg = createImg();
-
-
-    const secMinImg = createImg();
-
-
     const firstNumbOfSec = document.querySelector('.first_number_of_seconds');
     const secondNumbOfSec = document.querySelector('.second_number_of_seconds');
 
+    const firstHoursImg = createImg();
+    const SecHoursImg = createImg();
+    const firstMinImg = createImg();
+    const secMinImg = createImg();
     const firstSecImg = createImg();
-
     const lastSecImg = createImg();
 
    function secondChange() {
@@ -91,11 +78,6 @@ function showTime() {
            secondNumberOfHours=0
        }
    }
-
-
-
-    setInterval(secondChange,0.1)
-
+setInterval(secondChange,1000)
 }
-
 showTime();
