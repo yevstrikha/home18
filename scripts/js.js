@@ -60,13 +60,13 @@ function showTime() {
         if (lastSecond >= 10) {
             lastSecond = 0;
             firstSecond++
-        } else if (firstSecond >= 6) {
+        } else if (firstSecond >5) {
             firstSecond = 0;
             lastMinute++;
         } else if (lastMinute >= 10) {
             lastMinute = 0;
             firstMinute++;
-        } else if (firstMinute >= 6) {
+        } else if (firstMinute >5) {
             firstMinute = 0;
             secondNumberOfHours++;
         } else if (secondNumberOfHours >= 4 && firstHour === 2) {
